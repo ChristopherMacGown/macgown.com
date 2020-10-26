@@ -1,19 +1,28 @@
 <template>
-  <div class="container">
-    <Header />
-    <ColorModePicker />
+  <div class="page-wrapper">
     <nuxt />
   </div>
 </template>
 
-<script>
-import Header from '~/components/general/Header.vue'
-import ColorModePicker from '~/components/general/ColorModePicker.vue'
 
-export default {
-  components: {
-    Header,
-    ColorModePicker
+<script>
+
+  export default {
+    components: {
+    },
+    head(){
+      return {
+        title: "Lums - Vue Nuxt SEO Landing Template"
+      }
+    },
+    mounted(){
+      this.$nextTick(() => {
+        this.$nuxt.$loading.start()
+        setTimeout(() => this.$nuxt.$loading.finish(), 500)
+      })
+    }
   }
-}
 </script>
+
+<style>
+</style>

@@ -16,7 +16,11 @@
   "license": "MIT",
   "dependencies": {
     "@nuxtjs/markdownit": "^1.2.6",
-    "nuxt": "^2.14.7"
+    "nuxt": "^2.14.7",
+    "swiper": "^6.3.4",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-count-to": "^1.0.13",
+    "vue-observe-visibility": "^0.4.6"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^1.1.1",

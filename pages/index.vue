@@ -1,23 +1,49 @@
 <template>
-  <div class="main text-center flex flex-col items-center justify-center">
-    <!-- <logo /> -->
-    <h1 class="title">MacGown & Associate</h1>
-    <h2 class="subtitle">Boilerplate</h2>
+  <div>
+    <Nav />
+    <Banner />
+    <Service />
+    <CallToActionThree />
+    <CallToActionTwo />
+    <Pricing />
+    <Testimonial />
+    <Brands />
+    <FunFact />
+    <BlogArea />
+    <CallToAction />
+    <Footer />
   </div>
 </template>
 
 <script>
-// import Logo from '~/components/Logo.vue'
 
-export default {
-  layout: 'landing',
-  // components: {
-  //   Logo
-  // },
-  head() {
-    return {
-      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+  import Nav from "../components/Nav";
+  import Banner from "../components/Banner";
+  import Footer from "../components/Footer";
+  import Service from "../components/Service";
+  import CallToActionThree from "../components/CallToActionThree";
+  import CallToActionTwo from "../components/CallToActionTwo";
+  import Pricing from "../components/Pricing";
+  import Testimonial from "../components/Testimonial";
+  import Brands from "../components/Brands";
+  import FunFact from "../components/FunFact";
+  import BlogArea from "../components/BlogArea";
+  import CallToAction from "../components/CallToAction";
+  export default {
+    components: {
+      CallToAction,
+      BlogArea,
+      FunFact,
+      Brands,
+      Testimonial,
+      Pricing,
+      CallToActionTwo,
+      CallToActionThree,
+      Service,
+      Footer,
+      Banner,
+      Nav
+
     }
-  },
-}
+  }
 </script>
